@@ -12,7 +12,7 @@
 #
 #   input--
 #   alpha.0: beta distrib's inital 'alpha' parameter
-#   beta: beta distrib's inital 'beta' parameter
+#   beta.0: beta distrib's inital 'beta' parameter
 #   s.0: initial value for s~binom samples
 #   theta.0: initial value for theta~beta samples
 #   niter: number of samples wanted
@@ -20,7 +20,7 @@
 #
 #   output--
 #   list$s: the gibbs samples for s
-#   list$theta: the gibbs samples for theta 
+#   list$theta: the gibbs samples for theta
 bivariate_gibbs<- function(alpha.0, beta.0, s.0, theta.0, niter, burn.in=0) {
   s <- theta <- rep(0, niter+burn.in)
   n <- as.integer(round(s.0/theta.0))
@@ -61,7 +61,7 @@ dev.off()
 
 ### Posterior Median
 cat("MLE of theta:                 ", s.0/n, "\n")
-cat("Posterior median of theta:    ", median(samp$theta), "\n \n \n \n")
+cat("Posterior median of theta:    ", median(samp$theta), "\n \n ")
 
 ### Test sensitivity with alternative samples...
 samp2 <- bivariate_gibbs(alpha.0, beta.0, s.0, theta.0*.5, niter=m, burn.in=1000)
@@ -70,4 +70,7 @@ samp4 <- bivariate_gibbs(alpha.0, beta.0, s.0, theta.0*2, niter=m, burn.in=1000)
 
 cat("Posterior median of with theta.0 < MLE theta:     ", median(samp2$theta), "\n")
 cat("Posterior median of with theta.0 << MLE theta:    ", median(samp3$theta), "\n")
-cat("Posterior median of with theta.0 > MLE theta:     ", median(samp4$theta), "\n")
+cat("Posterior median of with theta.0 > MLE theta:     ", median(samp4$theta), "\n \n")
+
+# out of curiosity...
+cat("Posterior median of s:    ", median(samp$s), "\n")

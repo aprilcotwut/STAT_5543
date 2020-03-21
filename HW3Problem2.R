@@ -57,3 +57,16 @@ cat("Posterior median of theta:    ", median(samp$theta), "\n \n")
 # out of curiosity...
 cat("Posterior median of n:    ", median(samp$n), "\n")
 cat("Posterior median of s:    ", median(samp$s), "\n")
+
+### Trace plots
+jpeg("trace_s_prob2.jpg")
+plot(samp$s, type = "s", main = "Trace Plot for S", ylim = c(min(samp$s)-1,max(samp$s)+1))
+dev.off()
+
+jpeg("trace_theta_prob2.jpg")
+plot(samp$theta, type = "s", main = "Trace Plot for Theta", ylim = c(min(samp$theta)-0.1,max(samp$theta)+0.1))
+dev.off()
+
+jpeg("trace_n_prob2.jpg")
+plot(samp$n, type = "s", main = "Trace Plot for N", ylim = c(min(samp$n)-0.5,max(samp$n)+0.5))
+dev.off()

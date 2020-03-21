@@ -46,11 +46,11 @@ beta.0 <- 6.4 # as defined in background as our prior
 samp <- bivariate_gibbs(alpha.0, beta.0, s.0, theta.0, niter=m, burn.in=1000)
 
 ### Trace plots
-jpeg("trace_s_prob1.jpg")
+jpeg("trace_s_prob1_alt.jpg")
 plot(samp$s, type = "s", main = "Trace Plot for S", ylim = c(min(samp$s)-1,max(samp$s)+1))
 dev.off()
 
-jpeg("trace_theta_prob1.jpg")
+jpeg("trace_theta_prob1_alt.jpg")
 plot(samp$theta, type = "s", main = "Trace Plot for Theta", ylim = c(min(samp$theta)-0.1,max(samp$theta)+0.1))
 dev.off()
 
@@ -74,3 +74,14 @@ cat("Posterior median of with theta.0 > MLE theta:     ", median(samp4$theta), "
 
 # out of curiosity...
 cat("Posterior median of s:    ", median(samp$s), "\n")
+
+### Trace plots inaccurate theta
+samp <-samp3
+
+jpeg("trace_s_prob1_alt.jpg")
+plot(samp$s, type = "s", main = "Trace Plot for S Using Inaccurate Initial Theta", ylim = c(min(samp$s)-1,max(samp$s)+1))
+dev.off()
+
+jpeg("trace_theta_prob1_alt.jpg")
+plot(samp$theta, type = "s", main = "Trace Plot for Theta Using Inaccurate Initial Theta", ylim = c(min(samp$theta)-0.1,max(samp$theta)+0.1))
+dev.off()

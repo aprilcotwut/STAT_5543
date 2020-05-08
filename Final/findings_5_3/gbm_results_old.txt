@@ -1,0 +1,30 @@
+
+Confusion Matrix (vertical: actual; across: predicted)  for max f1 @ threshold = 0.701989335241461:
+        0   1    Error     Rate
+0      35  19 0.351852   =19/54
+1       3 132 0.022222   =3/135
+Totals 38 151 0.116402  =22/189
+
+
+Variable Importances: 
+                      variable relative_importance scaled_importance percentage
+1   std_delta_delta_log_energy           38.451302          1.000000   0.140187
+2      tqwt_entropy_log_dec_33           19.913792          0.517896   0.072602
+3           mean_MFCC_2nd_coef           14.598226          0.379655   0.053223
+4         tqwt_TKEO_std_dec_11           14.443278          0.375625   0.052658
+5           tqwt_energy_dec_25           14.062946          0.365734   0.051271
+6      tqwt_entropy_log_dec_35           13.338094          0.346883   0.048629
+7                 locAbsJitter            8.834799          0.229766   0.032210
+8                std_6th_delta            7.437512          0.193427   0.027116
+9               mean_2nd_delta            7.378081          0.191881   0.026899
+10          mean_MFCC_6th_coef            5.324920          0.138485   0.019414
+11          mean_MFCC_1st_coef            5.321769          0.138403   0.019402
+12               std_8th_delta            4.467628          0.116189   0.016288
+13         std_4th_delta_delta            4.326714          0.112525   0.015775
+14        std_10th_delta_delta            4.101280          0.106662   0.014953
+15      tqwt_entropy_log_dec_1            3.812572          0.099153   0.013900
+16 tqwt_entropy_shannon_dec_35            3.700164          0.096230   0.013490
+17         mean_MFCC_10th_coef            3.397454          0.088357   0.012387
+18           tqwt_energy_dec_6            3.306626          0.085995   0.012055
+19   tqwt_skewnessValue_dec_27            3.129962          0.081401   0.011411
+20           std_MFCC_4th_coef            2.974946          0.077369   0.010846

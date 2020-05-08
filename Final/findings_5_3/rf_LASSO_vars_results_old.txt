@@ -1,0 +1,33 @@
+time taken: 19.92191
+H2O Grid Details
+================
+
+Grid ID: rf_parkd_LASSO_vars_2
+Used hyper parameters:
+  -  max_depth
+  -  min_rows
+Number of models: 8
+Number of failed models: 0
+
+Hyper-Parameter Search Summary: ordered by increasing logloss
+  max_depth min_rows                     model_ids             logloss
+1        10      1.0 rf_parkd_LASSO_vars_2_model_4   0.329863405047092
+2        10      2.0 rf_parkd_LASSO_vars_2_model_8 0.33599929848992616
+3         7      1.0 rf_parkd_LASSO_vars_2_model_3  0.3363440147930985
+4         7      2.0 rf_parkd_LASSO_vars_2_model_7  0.3416478578526816
+5         3      1.0 rf_parkd_LASSO_vars_2_model_2  0.3911997379434051
+6         3      2.0 rf_parkd_LASSO_vars_2_model_6 0.39135599381604524
+7         2      1.0 rf_parkd_LASSO_vars_2_model_1  0.4247948665688643
+8         2      2.0 rf_parkd_LASSO_vars_2_model_5 0.42488678308580174
+
+Confusion Matrix (vertical: actual; across: predicted)  for max f1 @ threshold = 0.533416211288422:
+        0   1    Error     Rate
+0      32  22 0.407407   =22/54
+1       4 131 0.029630   =4/135
+Totals 36 153 0.137566  =26/189
+
+logloss:  0.3598236
+mean per class error:  0.2185185
+RMSE:  0.3359717
+
+70 vars

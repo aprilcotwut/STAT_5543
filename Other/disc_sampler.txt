@@ -1,0 +1,17 @@
+arfunction <- function(n){
+  rvx = rep(0,n)
+  rvy = rep(0,n)
+  a = 0
+  for (i in 1:n){
+    x = runif(1,min = -1,max = 1)
+    y = runif(1,min = -1, max = 1)
+    if (abs(x) + abs(y) <= 1){
+      rvx[i] = x
+      rvy[i] = y
+      a = a + 1
+    }
+  }
+  cat("Efficiency is ", a/n)
+  plot(rvx,rvy)
+  title("Uniform on a disc")
+}

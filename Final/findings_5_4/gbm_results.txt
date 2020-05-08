@@ -1,0 +1,63 @@
+time taken: 4.859507
+H2O Grid Details
+================
+
+Grid ID: gbm_parkd
+Used hyper parameters:
+  -  learn_rate
+  -  max_depth
+  -  min_rows
+Number of models: 30
+Number of failed models: 0
+
+Hyper-Parameter Search Summary: ordered by increasing logloss
+  learn_rate max_depth min_rows          model_ids            logloss
+1        0.2         2      2.0 gbm_parkd_model_16  0.603973713605656
+2        0.2         2      1.0  gbm_parkd_model_1 0.6051658718188282
+3        0.4         2      1.0  gbm_parkd_model_2  0.714279359169237
+4        0.4         2      2.0 gbm_parkd_model_17 0.7292081537446286
+5        0.2         3      2.0 gbm_parkd_model_19 0.7521023114608476
+
+---
+   learn_rate max_depth min_rows          model_ids            logloss
+25        0.2         7      1.0 gbm_parkd_model_10  3.876184283623619
+26        0.2        10      1.0 gbm_parkd_model_13 3.9978382058865765
+27        0.4        10      2.0 gbm_parkd_model_29  4.311181418241856
+28        0.5        10      2.0 gbm_parkd_model_30  4.734951488104684
+29        0.4        10      1.0 gbm_parkd_model_14  7.867085753576118
+30        0.5        10      1.0 gbm_parkd_model_15  9.531540655591838
+
+Confusion Matrix (vertical: actual; across: predicted)  for max f1 @ threshold = 0.450759745115213:
+        0   1    Error     Rate
+0      36  33 0.478261   =33/69
+1      10 110 0.083333  =10/120
+Totals 46 143 0.227513  =43/189
+
+logloss:  0.6039737
+mean per class error:  0.2807971
+RMSE:  0.4296184
+
+Variable Importances:
+                     variable relative_importance scaled_importance percentage
+1       tqwt_TKEO_mean_dec_12           34.918472          1.000000   0.133123
+2        std_10th_delta_delta           14.352832          0.411038   0.054719
+3          tqwt_energy_dec_25           13.029045          0.373128   0.049672
+4     tqwt_entropy_log_dec_33           11.443804          0.327729   0.043628
+5  std_delta_delta_log_energy            9.847465          0.282013   0.037543
+6         std_9th_delta_delta            9.326818          0.267103   0.035558
+7     tqwt_entropy_log_dec_12            8.708311          0.249390   0.033200
+8          tqwt_energy_dec_26            6.339395          0.181548   0.024168
+9      det_entropy_log_1_coef            5.819372          0.166656   0.022186
+10              std_7th_delta            4.919382          0.140882   0.018755
+11        std_6th_delta_delta            4.646945          0.133080   0.017716
+12             mean_2nd_delta            4.516777          0.129352   0.017220
+13         mean_MFCC_5th_coef            4.460479          0.127740   0.017005
+14       tqwt_TKEO_std_dec_11            3.950198          0.113126   0.015060
+15  tqwt_kurtosisValue_dec_20            3.941680          0.112882   0.015027
+16               locAbsJitter            3.844531          0.110100   0.014657
+17       tqwt_meanValue_dec_5            3.709435          0.106231   0.014142
+18    tqwt_entropy_log_dec_11            3.500244          0.100240   0.013344
+19         tqwt_energy_dec_18            3.445175          0.098663   0.013134
+20         mean_MFCC_2nd_coef            3.249228          0.093052   0.012387
+
+vars: 142

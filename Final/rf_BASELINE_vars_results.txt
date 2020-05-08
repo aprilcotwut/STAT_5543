@@ -1,0 +1,38 @@
+time taken: 4.186835 
+H2O Grid Details
+================
+
+Grid ID: rf_parkd_BASELINE_vars 
+Used hyper parameters: 
+  -  max_depth 
+  -  min_rows 
+Number of models: 42 
+Number of failed models: 0 
+
+Hyper-Parameter Search Summary: ordered by increasing logloss
+  max_depth min_rows                       model_ids             logloss
+1        12      1.0 rf_parkd_BASELINE_vars_model_11 0.41212876006875443
+2        13      1.0 rf_parkd_BASELINE_vars_model_12  0.4124306630026037
+3        14      1.0 rf_parkd_BASELINE_vars_model_13  0.4125792722009725
+4        15      1.0 rf_parkd_BASELINE_vars_model_14  0.4126826612825095
+5        11      1.0 rf_parkd_BASELINE_vars_model_10 0.41280883175365707
+
+---
+   max_depth min_rows                       model_ids             logloss
+37         3      1.0  rf_parkd_BASELINE_vars_model_2  0.4584157091401055
+38         3      2.0 rf_parkd_BASELINE_vars_model_16 0.45851923050366217
+39         3      3.0 rf_parkd_BASELINE_vars_model_30  0.4591597104597229
+40         2      2.0 rf_parkd_BASELINE_vars_model_15  0.4785666965424673
+41         2      1.0  rf_parkd_BASELINE_vars_model_1  0.4785847895414008
+42         2      3.0 rf_parkd_BASELINE_vars_model_29 0.47861235064619834
+
+Confusion Matrix (vertical: actual; across: predicted)  for max f1 @ threshold = 0.493251666445285:
+        0   1    Error     Rate
+0      18  24 0.571429   =24/42
+1       1 110 0.009009   =1/111
+Totals 19 134 0.163399  =25/153
+
+logloss:  0.4121288 
+mean per class error:  0.2902188 
+RMSE:  0.3623388 
+

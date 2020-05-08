@@ -1,0 +1,38 @@
+time taken: 2.938067 
+H2O Grid Details
+================
+
+Grid ID: rf_parkd_gbm_vars_4 
+Used hyper parameters: 
+  -  max_depth 
+  -  min_rows 
+Number of models: 42 
+Number of failed models: 0 
+
+Hyper-Parameter Search Summary: ordered by increasing logloss
+  max_depth min_rows                    model_ids            logloss
+1         8      1.0  rf_parkd_gbm_vars_4_model_7 0.5494267044680239
+2        14      1.0 rf_parkd_gbm_vars_4_model_13 0.5506491194459272
+3        13      1.0 rf_parkd_gbm_vars_4_model_12 0.5508349727984798
+4        15      1.0 rf_parkd_gbm_vars_4_model_14 0.5510783524296241
+5        11      1.0 rf_parkd_gbm_vars_4_model_10 0.5515493534278852
+
+---
+   max_depth min_rows                    model_ids            logloss
+37        10      2.0 rf_parkd_gbm_vars_4_model_23 0.5634835372419624
+38         8      2.0 rf_parkd_gbm_vars_4_model_21 0.5637385075721022
+39         7      2.0 rf_parkd_gbm_vars_4_model_20 0.5648967189856676
+40         2      3.0 rf_parkd_gbm_vars_4_model_29 0.5751854799405467
+41         2      2.0 rf_parkd_gbm_vars_4_model_15 0.5755543401099116
+42         2      1.0  rf_parkd_gbm_vars_4_model_1 0.5755942401013892
+
+Confusion Matrix (vertical: actual; across: predicted)  for max f1 @ threshold = 0.514938988294452:
+        0   1    Error     Rate
+0      33  36 0.521739   =36/69
+1      10 110 0.083333  =10/120
+Totals 43 146 0.243386  =46/189
+
+logloss:  0.5494267 
+mean per class error:  0.3025362 
+RMSE:  0.4266191 
+

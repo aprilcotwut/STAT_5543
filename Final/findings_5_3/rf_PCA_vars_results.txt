@@ -1,0 +1,32 @@
+time taken: 16.83533
+H2O Grid Details
+================
+
+Grid ID: rf_parkd_PCA_vars_5
+Used hyper parameters:
+  -  max_depth
+  -  min_rows
+Number of models: 8
+Number of failed models: 0
+
+Hyper-Parameter Search Summary: ordered by increasing logloss
+  max_depth min_rows                   model_ids             logloss
+1        10      1.0 rf_parkd_PCA_vars_5_model_4 0.38454522523620577
+2        10      2.0 rf_parkd_PCA_vars_5_model_8 0.38785774296671643
+3         7      1.0 rf_parkd_PCA_vars_5_model_3 0.39363929350553983
+4         7      2.0 rf_parkd_PCA_vars_5_model_7 0.39482940439569236
+5         3      2.0 rf_parkd_PCA_vars_5_model_6 0.44761631845092503
+6         3      1.0 rf_parkd_PCA_vars_5_model_2  0.4485166882582051
+7         2      2.0 rf_parkd_PCA_vars_5_model_5  0.4742680625299087
+8         2      1.0 rf_parkd_PCA_vars_5_model_1  0.4743901550213387
+
+Confusion Matrix (vertical: actual; across: predicted)  for max f1 @ threshold = 0.254636363983154:
+       0   1    Error     Rate
+0      1  53 0.981481   =53/54
+1      0 135 0.000000   =0/135
+Totals 1 188 0.280423  =53/189
+
+logloss:  0.7766151 
+mean per class error:  0.4907407 
+RMSE:  0.5382689 
+

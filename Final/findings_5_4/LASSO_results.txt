@@ -1,0 +1,76 @@
+time taken: 1.492884
+H2OBinomialMetrics: glm
+** Reported on training data. **
+
+MSE:  0.08139158
+RMSE:  0.2852921
+LogLoss:  0.2780782
+Mean Per-Class Error:  0.1763623
+AUC:  0.9435197
+AUCPR:  0.9831211
+Gini:  0.8870395
+R^2:  0.5208654
+Residual Deviance:  315.3407
+AIC:  395.3407
+
+Confusion Matrix (vertical: actual; across: predicted) for F1-optimal threshold:
+        0   1    Error     Rate
+0      81  42 0.341463  =42/123
+1       5 439 0.011261   =5/444
+Totals 86 481 0.082892  =47/567
+
+Maximum Metrics: Maximum metrics at their respective thresholds
+                        metric threshold      value idx
+1                       max f1  0.573117   0.949189 315
+2                       max f2  0.573117   0.972530 315
+3                 max f0point5  0.671970   0.936941 285
+4                 max accuracy  0.581701   0.917108 313
+5                max precision  0.996398   1.000000   0
+6                   max recall  0.209966   1.000000 380
+7              max specificity  0.996398   1.000000   0
+8             max absolute_mcc  0.573117   0.743723 315
+9   max min_per_class_accuracy  0.760811   0.842342 238
+10 max mean_per_class_accuracy  0.727337   0.857641 259
+11                     max tns  0.996398 123.000000   0
+12                     max fns  0.996398 443.000000   0
+13                     max fps  0.048938 123.000000 399
+14                     max tps  0.209966 444.000000 380
+15                     max tnr  0.996398   1.000000   0
+16                     max fnr  0.996398   0.997748   0
+17                     max fpr  0.048938   1.000000 399
+18                     max tpr  0.209966   1.000000 380
+
+Gains/Lift Table: Extract with `h2o.gainsLift(<model>, <data>)` or `h2o.gainsLift(<model>, valid=<T/F>, xval=<T/F>)`
+Confusion Matrix (vertical: actual; across: predicted)  for max f1 @ threshold = 0.638305416871583:
+        0   1    Error     Rate
+0      43  26 0.376812   =26/69
+1      15 105 0.125000  =15/120
+Totals 58 131 0.216931  =41/189
+
+logloss:  0.5455206
+mean per class error:  0.2509058
+RMSE:  0.4239058
+
+                    variable relative_importance scaled_importance percentage
+1        std_9th_delta_delta          0.40553746         1.0000000 0.10561410
+2        std_6th_delta_delta          0.33337815         0.8220650 0.08682165
+3        tqwt_maxValue_dec_7          0.26444404         0.6520829 0.06886915
+4    tqwt_entropy_log_dec_26          0.25781344         0.6357327 0.06714234
+5       tqwt_maxValue_dec_11          0.22887158         0.5643661 0.05960501
+6                        DFA          0.17399226         0.4290411 0.04531279
+7         tqwt_energy_dec_25          0.17014241         0.4195480 0.04431018
+8              std_8th_delta          0.16702950         0.4118719 0.04349948
+9             mean_2nd_delta          0.16284398         0.4015510 0.04240945
+10   tqwt_entropy_log_dec_33          0.16095414         0.3968909 0.04191728
+11        tqwt_energy_dec_15          0.15496163         0.3821142 0.04035665
+12       mean_MFCC_10th_coef          0.14899168         0.3673932 0.03880190
+13 tqwt_kurtosisValue_dec_33          0.11904453         0.2935476 0.03100276
+14      tqwt_stdValue_dec_26          0.11454152         0.2824438 0.02983004
+15        tqwt_energy_dec_26          0.10816386         0.2667173 0.02816911
+16        tqwt_energy_dec_12          0.10447549         0.2576223 0.02720855
+17        mean_MFCC_2nd_coef          0.09976678         0.2460112 0.02598226
+18                        b4          0.08707112         0.2147055 0.02267593
+19 tqwt_kurtosisValue_dec_27          0.07703734         0.1899636 0.02006283
+20      tqwt_meanValue_dec_5          0.07151396         0.1763437 0.01862438
+
+vars: 40

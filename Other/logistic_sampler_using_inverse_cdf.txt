@@ -1,0 +1,6 @@
+logistic_rvgen <- function(lambda,n=1){
+    # Recall the signature for runif(n,high,low)
+    u=runif(n)
+    x=-log((1/u)-1)/lambda
+    return(x)
+}

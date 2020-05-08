@@ -1,0 +1,29 @@
+
+Confusion Matrix (vertical: actual; across: predicted)  for max f1 @ threshold = 0.565379566368452:
+        0   1    Error     Rate
+0      29  25 0.462963   =25/54
+1       7 128 0.051852   =7/135
+Totals 36 153 0.169312  =32/189
+
+
+                      variable relative_importance scaled_importance percentage
+1   std_delta_delta_log_energy           0.7135750         1.0000000 0.04285695
+2    tqwt_kurtosisValue_dec_33           0.5835646         0.8178041 0.03504859
+3           tqwt_energy_dec_25           0.5435588         0.7617402 0.03264586
+4          std_9th_delta_delta           0.5170811         0.7246345 0.03105562
+5               mean_2nd_delta           0.4993728         0.6998183 0.02999207
+6      tqwt_entropy_log_dec_33           0.4739657         0.6642128 0.02846613
+7    tqwt_kurtosisValue_dec_18           0.4700359         0.6587056 0.02823011
+8          std_7th_delta_delta           0.4561273         0.6392142 0.02739477
+9  tqwt_entropy_shannon_dec_25           0.3732536         0.5230755 0.02241742
+10       tqwt_TKEO_mean_dec_17           0.3615980         0.5067415 0.02171739
+11         mean_MFCC_10th_coef           0.3578771         0.5015269 0.02149391
+12   tqwt_kurtosisValue_dec_27           0.3426749         0.4802226 0.02058087
+13   tqwt_kurtosisValue_dec_31           0.3239111         0.4539272 0.01945393
+14        tqwt_TKEO_std_dec_11           0.2970786         0.4163242 0.01784238
+15 tqwt_entropy_shannon_dec_27           0.2862776         0.4011878 0.01719368
+16                 IMF_SNR_SEO           0.2808114         0.3935276 0.01686539
+17 tqwt_entropy_shannon_dec_34           0.2775676         0.3889816 0.01667057
+18         std_6th_delta_delta           0.2722435         0.3815205 0.01635080
+19          tqwt_energy_dec_15           0.2718562         0.3809777 0.01632754
+20        tqwt_meanValue_dec_5           0.2588154         0.3627024 0.01554432
